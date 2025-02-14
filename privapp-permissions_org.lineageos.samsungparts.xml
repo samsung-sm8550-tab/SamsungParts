@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="org.lineageos.samsungparts">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    </privapp-permissions>
+</permissions>
