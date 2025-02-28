@@ -1,2 +1,0 @@
-# Assign night_dim a sysfs label for fine-grained control
-typeattribute sysfs_nightdim sysfs_type;
