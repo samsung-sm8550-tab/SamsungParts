@@ -9,17 +9,17 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-import org.lineageos.samsungparts.udfps.SemUdfpsService
 import org.lineageos.samsungparts.tsp.SecTspService
- 
- class SamsungPartsService : Service() {
-     private val TAG = "SamsungPartsService"
- 
-     override fun onCreate() {
-         super.onCreate()
-         Log.i(TAG, "SamsungPartsService started")
- 
-         // Start EyeComfortSolutionService
+import org.lineageos.samsungparts.udfps.SemUdfpsService
+
+class SamsungPartsService : Service() {
+    private val TAG = "SamsungPartsService"
+
+    override fun onCreate() {
+        super.onCreate()
+        Log.i(TAG, "SamsungPartsService started")
+
+        // Start EyeComfortSolutionService
         Log.i(TAG, "Starting EyeComfortSolutionService...")
         startService(Intent(this, EyeComfortSolutionService::class.java))
 
@@ -27,14 +27,10 @@ import org.lineageos.samsungparts.tsp.SecTspService
         Log.i(TAG, "Starting SecTspService...")
         startService(Intent(this, SecTspService::class.java))
 
-         // Start SemUdfpsService
+        // Start SemUdfpsService
         Log.i(TAG, "Starting SemUdfpsService...")
         startService(Intent(this, SemUdfpsService::class.java))
+    }
 
-     }
- 
-     override fun onBind(intent: Intent?): IBinder? {
-         return null
-     }
- }
- 
+    override fun onBind(intent: Intent?): IBinder? = null
+}

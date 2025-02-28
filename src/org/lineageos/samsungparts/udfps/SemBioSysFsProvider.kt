@@ -18,5 +18,8 @@ interface SemBioSysFsProvider {
      * @param path The SysFS path to write to.
      * @param data The data to write as a byte array.
      */
-    fun writeSysFs(path: String, data: ByteArray)
+    fun writeSysFs(
+        path: String,
+        data: ByteArray,
+    )
 }

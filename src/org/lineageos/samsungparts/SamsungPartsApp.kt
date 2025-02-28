@@ -11,7 +11,6 @@ import android.util.Log
  * Ensures required services are initialized at startup.
  */
 class SamsungPartsApp : Application() {
-
     private val TAG = "SamsungPartsApp"
 
     override fun onCreate() {

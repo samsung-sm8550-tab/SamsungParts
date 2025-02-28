@@ -36,9 +36,7 @@ object Utils {
      * @param file The file to read.
      * @return The file contents as a String, or null if an error occurs.
      */
-    fun readFileAsString(file: File): String? {
-        return readFile(file)?.toString(StandardCharsets.UTF_8)
-    }
+    fun readFileAsString(file: File): String? = readFile(file)?.toString(StandardCharsets.UTF_8)
 
     /**
      * Writes a byte array to a file.
@@ -47,8 +45,11 @@ object Utils {
      * @param data The data to write.
      * @return True if the write was successful, false otherwise.
      */
-    fun writeFile(file: File, data: ByteArray): Boolean {
-        return try {
+    fun writeFile(
+        file: File,
+        data: ByteArray,
+    ): Boolean =
+        try {
             file.parentFile?.mkdirs() // Ensure the parent directory exists
             file.writeBytes(data)
             true
@@ -56,7 +57,6 @@ object Utils {
             Slog.e(TAG, "writeFile failed: ${e.message}")
             false
         }
-    }
 
     /**
      * Writes a string to a file using UTF-8 encoding.
@@ -65,7 +65,8 @@ object Utils {
      * @param content The content to write.
      * @return True if the write was successful, false otherwise.
      */
-    fun writeFileAsString(file: File, content: String): Boolean {
-        return writeFile(file, content.toByteArray(StandardCharsets.UTF_8))
-    }
+    fun writeFileAsString(
+        file: File,
+        content: String,
+    ): Boolean = writeFile(file, content.toByteArray(StandardCharsets.UTF_8))
 }

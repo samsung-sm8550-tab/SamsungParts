@@ -12,7 +12,6 @@ import android.util.Log
  * Service for handling UDFPS (Under-Display Fingerprint Sensor) operations.
  */
 class SemUdfpsService : Service() {
-
     private val TAG = "SemUdfpsService"
     private val udfpsHelper = SemUdfpsHelper.instance
 
