@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021-2025 The LineageOS Project
+ * Copyright (c) 2025 The LineageOS Project
  * Licensed under the Apache License, Version 2.0
  */
 

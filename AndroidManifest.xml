@@ -25,6 +25,11 @@
             android:enabled="true"
             android:exported="true"/>
 
+        <service
+            android:name=".tsp.SecTspService"
+            android:enabled="true"
+            android:exported="true" />
+
         <service android:name=".udfps.SemUdfpsService"
             android:enabled="true"
             android:exported="true" />
