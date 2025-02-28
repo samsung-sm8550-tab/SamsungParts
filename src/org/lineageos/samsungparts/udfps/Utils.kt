@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 The LineageOS Project
+ * Licensed under the Apache License, Version 2.0
+ */
+
 package org.lineageos.samsungparts.udfps
 
 import android.util.Slog

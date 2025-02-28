@@ -1,4 +1,7 @@
-// hardware/samsung-ext/packages/apps/SamsungParts/src/org/lineageos/samsungparts/SamsungPartsApp.kt
+/*
+ * Copyright (c) 2025 The LineageOS Project
+ * Licensed under the Apache License, Version 2.0
+ */
 
 package org.lineageos.samsungparts
 

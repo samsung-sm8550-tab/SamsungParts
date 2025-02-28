@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <boolean name="config_feature_enable_night_dim">false</boolean>
+</resources>
