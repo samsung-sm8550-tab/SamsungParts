@@ -1,0 +1,1 @@
+/sys/class/backlight/night_dim u:object_r:sysfs_nightdim:s0

@@ -1,0 +1,4 @@
+# Define `sysfs_nightdim` for night_dim access
+type sysfs_nightdim, fs_type, sysfs_type;
+
+allow system_app sysfs_nightdim:file w_file_perms;
